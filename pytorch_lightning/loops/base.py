@@ -100,7 +100,7 @@ class Loop(ABC, Generic[T]):
         """
 
     def replace(self, **loops: Union["Loop", Type["Loop"]]) -> None:
-        """Optionally replace one or multiple of this loop's sub-loops.
+        r"""Optionally replace one or multiple of this loop's sub-loops.
 
         This methods takes care of instantiating the class (if necessary) with all existing arguments, connecting all
         sub-loops of the old loop to the new instance, setting the ``Trainer`` reference, and ``connect``\ing the new
